@@ -13,6 +13,12 @@
 
 # ## Setup
 #
+# ### Software and Materials
+#
+# Follow the [Python Installation] instructions and ensure that you can successfully start JupyterLab.
+#
+# A handy [cheat-sheet](Python/PythonIntro/python-cheat-sheet-basic.pdf) is available to help you look up and remember basic syntax.
+#
 # ### Class Structure
 #
 # * Informal --- Ask questions at any time. Really!
