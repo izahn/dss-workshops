@@ -2,7 +2,9 @@
 ```{r, echo=FALSE, results=FALSE, eval=TRUE}
 require(knitr)
 knitr::opts_chunk$set(eval=FALSE, results=FALSE, message=FALSE, warning=FALSE, error=FALSE)
-statapath <- "/Applications/Stata/StataMP.app/Contents/MacOS/stata-mp"
+os <- Sys.info()["sysname"]
+if(os == "Darwin") statapath <- "/Applications/Stata/StataMP.app/Contents/MacOS/stata-mp"
+if(os == "Linux") statapath <- system("which stata-mp", intern = TRUE)
 opts_chunk$set(engine="stata", engine.path=statapath, comment="")
 ```
 
